@@ -1,0 +1,274 @@
+@font-face{
+    font-family: "garamond";
+    src: url("../fonts/EBGaramond-VariableFont_wght.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: 'garamond';
+}
+
+#navbarNav{
+    max-width: 60%;
+}
+.navbar>.container-fluid{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: flex-end;
+}
+/*--Header--*/
+header{
+    height: 400px;
+    background: url(../img/fondov2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    font-family: garamond;
+}
+
+a{
+    text-decoration: none;
+    font-family: garamond;
+}
+.contenedor{
+    text-align: center;
+    padding-top: 150px;
+    font-size: 35px;
+    font-family: garamond;
+}
+
+.texto{
+    text-align: center;
+    justify-content: center;
+    width: 40%;
+    background: #0000009c;
+    display: inline-table;
+    color: white;
+    border-radius: 25px;
+    font-family: garamond;
+}
+
+
+.nombre{
+    text-shadow: 3px -3px 0px #020202cc;
+    color: white;
+    font-weight: bold;
+    font-family: garamond;
+}
+
+.profesion{
+    font-weight: 100;
+    text-shadow: 3px -3px 0px #020202cc;
+    color: white;
+    font-family: garamond;
+}
+
+/*--Card--*/
+.card-body{
+text-align: justify;
+margin-left: 14%;
+}
+.card-body h5{
+    margin-left: 9%;
+}
+.card-title{
+    font-weight: bolder;
+}
+li{
+    list-style: none;
+}
+.nav-item{
+    min-width: 144px;
+    font-size: 19px;
+    font-family: garamond;
+    text-align: center;
+    color: white;
+    transition: all 500ms;
+}
+.nav-item a{
+    color: white;
+}
+
+#ntitulo{
+    text-align: center;
+    font-weight: bold;
+}
+.navbar-brand{
+    min-width: 144px;
+    text-align: center;
+    color: white;  
+}
+.nav-item:hover{
+    transition: all 500ms;
+    background: #ccc;
+    transform: translate(10px, 10px);
+}
+
+li:hover > .nav-link{
+    color: #000;
+}
+.navbar-brand:hover{
+    transition: all 500ms;
+    background: #ccc;
+    transform: translate(10px, 10px);
+    color: #000;
+}
+
+#lista1 ul li{
+    list-style:circle;
+}
+#lista2 li{
+    list-style:circle;
+}
+
+
+/*--about--*/
+
+.card-img, .card-img-bottom, .card-img-top {
+    width: 50%;
+    align-self: center;
+}
+.aboutP{
+    font-size: 20px; 
+    font-family: garamond;
+    text-align: justify;
+    letter-spacing: 3px;
+}
+.card{
+    border: 1px solid transparent;
+}
+
+/*--Research--*/
+
+.textos{
+    text-align: justify;
+    font-family: garamond;
+}
+.texto-title{
+    color: rgb(30, 30, 64);
+    font-size: 25px;
+    font-family: garamond;
+    font-weight: bold;
+}
+
+.textosps{
+    font-size: 20px;
+    font-family: garamond;
+    display: none;
+}
+.textospss{
+    font-size: 20px;
+    font-family: garamond;
+}
+#texto1,#texto12,#texto2,#texto22{
+    max-width: 150px;
+    max-height: 50px;
+}
+#texto12,#texto22,#texto32{
+    display: none;
+}
+
+
+
+
+/*--Footer--*/
+footer{
+    background-color: rgb(88, 87, 87);
+    min-height: 20vh;
+}
+footer h3,
+footer h5{
+    color: #ccc;
+    font-weight: 300;
+    max-width: 30%;
+    position: relative;
+    margin: 15px;
+    padding: 15px;
+    font-family: garamond;
+}
+
+#social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.socials{
+    max-width: 115px;
+    transition: all 500ms;
+}
+.socials>a>img{
+    max-width: 75px;
+}
+.socials:hover{
+    filter: drop-shadow(2px 4px 6px black);
+    transform: translate(10px, -10px);
+}
+.socials:hover>img{
+    max-width: 105px;
+}
+
+.col ul li{
+    margin-bottom: 15px;
+    font-size: 19px;
+    font-family: garamond;
+}
+button{
+    transition: all 500ms;
+}
+button:hover{
+    color: white;
+    background: #444;
+    border: none;
+}
+
+/*--response--*/
+
+@media (max-width: 992px) {
+    .aboutP {
+      font-size: 15px;
+      margin-top: 15px;
+    }
+    .text{
+        margin-top: -25px;
+    }
+    .texto-title{
+        font-size: 15px; ;
+    }
+    .contenedor-texto{
+        margin-top: -75px;
+    }
+    #navbarNav{
+        margin-left: 2%;
+    }
+}
+
+
+@media (max-width: 472px) {
+    .aboutP {
+      font-size: 15px;
+      margin-top: 15px;
+    }
+    .text{
+        margin-top: -25px;
+    }
+    .texto-title{
+        font-size: 15px; ;
+    }
+    .contenedor-texto{
+        margin-top: -105px;
+    }
+    #social{
+        display: grid;
+        text-align: center;
+    }
+}
+
+
+
+.toggler { width: 500px; height: 200px; }
+  #button { padding: .5em 1em; text-decoration: none; }
+  #effect { width: 240px; height: 170px; padding: 0.4em; position: relative; }
+  #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+  
